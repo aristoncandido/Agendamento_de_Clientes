@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Agendamento de Clientes</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Agendamento de Clientes
+        </h1>
+    </header>
+    <section class="container"  >
+
+        <form id="my-form">
+
+            <h1>Adicionar Usuário</h1>
+            <div class="msg"></div>
+
+
+            <div>
+                <label for="name" >Nome:</label>
+                <input type="text" placeholder="Digite seu Nome..." id="name" />
+            </div>
+
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" placeholder="exemplo@gmail.com" id="email" />
+            </div>
+
+
+            <div class="msg_email"></div>
+
+
+            <div>
+
+                        <label for="horario">Horário:</label>
+
+
+                        <select name="hours" id="horario">
+
+                            <option value="--">---</option>
+                            <option value="9:00h">9:00</option>
+                            <option value="10:00h">10:00</option>
+                            <option value="11:00h">11:00</option>
+                            <option value="12:00h">12:00</option>
+
+                        </select>
+
+            </div>
+            <div class="caixain" onmouseenter="enganar()" onmouseleave="voltar()"> 
+                <input class="btn" type="submit" value="Enviar"  />
+            </div>
+        
+     </form> 
+     
+     <ul id="users">
+
+
+     </ul>
+    
+   
+
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
